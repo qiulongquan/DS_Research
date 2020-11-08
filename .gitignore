@@ -1,0 +1,5 @@
+nodejs/
+python/hand_sign_digit_data/
+python/Dataset/
+core.*
+model/*
