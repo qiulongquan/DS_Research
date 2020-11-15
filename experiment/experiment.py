@@ -15,6 +15,7 @@ X = tf.placeholder("float",name="X")
 Y = tf.placeholder("float",name="Y")
 W = tf.Variable(3., name="W")
 B = tf.Variable(3., name="B")
+# 这个是明显的define and run，先定义后运行
 linearmodel = tf.add(tf.multiply(X,W),B)
 lossfunc = (tf.pow(Y - linearmodel, 2))
 learningrate = 0.01
@@ -29,6 +30,7 @@ sess.run(init)
 print("caculation begins ...")
 for j in range(100):
   for i in range(100):
+#     run的时候才正式运算，先把placeholder位置赋予值（给X,Y赋值）
     sess.run(trainoperation, feed_dict={X: xdata[i], Y:ydata[i]})
     #print("i = " + str(i) + "b: " + str(B.eval(session=sess)) + ", w : " + str(W.eval(session=sess)))
 print("caculation ends ...")
