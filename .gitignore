@@ -3,3 +3,7 @@ python/hand_sign_digit_data/
 python/Dataset/
 core.*
 model/*
+*.pyc
+.ipynb_checkpoints/*
+.ipynb_checkpoints
+venv
