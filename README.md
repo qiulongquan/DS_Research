@@ -7,7 +7,9 @@ environment.yml  这个里面包含了py3-gpu-jupyter-ds这个conda虚拟环境�
 
 experiment文件夹中包括了实验使用的ipynb文件，今后随着实验增加会逐渐增加文件数量。
 
-python文件夹中包含了手势识别的程序，还需要进一步研究改进。
+python文件夹中包含了手势识别的模型生成以及各个模型精度比较的ipynb程序（已经完成）
+
+gesture_digit_prediction_app 文件夹包含了手势识别django程序的完整版（已经测试完成）
 
 back_up文件夹中是已经不需要的文件，暂时先保留。
 

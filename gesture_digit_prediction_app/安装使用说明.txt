@@ -1,0 +1,8 @@
+这个文件夹是 gesture_digit_prediction_app 手势数字识别django程序的目录（已经测试完整版）
+安装说明
+    1.把文件夹放入AWS的容器中，使用Dockerfile安装容器
+    2.然后安装conda环境
+    conda环境安装 conda env create -f environment.yml
+    3.配置gesture_digit_prediction_app/mysite/settings.py 里面的 ALLOWED_HOSTS = ['3.238.132.125'] 设定正确的IP地址
+    4.启动django  python manage.py runserver 0.0.0.0:8000
+    5.AWS容器的共有IP地址使用，进入网页http://3.238.132.125:8000
